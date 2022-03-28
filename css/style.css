@@ -192,6 +192,36 @@ input{
     padding-bottom: 90px;
     padding-top: 90px;
 }
+.choose h2 , .choose p{
+    color: white;
+}
+.choose h2 {
+    position: relative;
+}
+.choose h2::before{
+    top: -50px;
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    background: url(../images/FEATURES.svg);
+    width: 400px;
+    height: 130px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.choose h2::after{
+    content: url();
+    width: 100px;
+    height: 2px;
+    background-color: #e41c26;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 38px;
+
+}
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   
@@ -754,6 +784,9 @@ margin: auto;
         bottom: -14px;
     left: -13px;
     transform: scale(0.7);
+    }
+    .choose h2::before {
+        width: 320px;
     }
     
 
